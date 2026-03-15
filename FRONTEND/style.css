@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: yellow;
+    color: blue;
+}
+
+header {
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+.parking-lot {
+    padding: 20px;
+    text-align: center;
+}
+
+.slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slot {
+    background-color: rgb(13, 219, 13);
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.slot:hover {
+    transform: scale(1.1);
+}
+
+.slot.occupied {
+    background-color: rgba(7, 1, 1, 0.829);
+    color: rgba(0, 0, 0, 0.781)
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: rgb(133, 124, 26);
+    margin-top: 20px;
+}

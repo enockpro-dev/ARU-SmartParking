@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARU Smart Parking System - Login</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgba(148, 148, 13, 0.952);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: rgb(107, 10, 10);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(39, 216, 16, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(248, 248, 244);
+           
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 20px 0;
+            display: inline-block;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            background-color: rgb(63, 63, 231);
+            color: yellow;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #6913eac1;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            text-decoration: none;
+            color: rgb(248, 248, 244);
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2> ARU Smart Parking System Login</h2>
+    <form id="loginForm" action="login_process.php" method="post" onsubmit="return validateForm()">
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <a href="homepage.html">Login</a>
+    </form>
+    <div class="forgot-password">
+        <a href="zone A.html">Forgot Password?</a>
+        
+    </div>
+</div>
+

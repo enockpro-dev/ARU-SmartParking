@@ -1,0 +1,43 @@
+header {
+    background-color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: blue;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    color: rgb(0, 255, 13);
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: black;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+h1.colorful-text {
+    font-size: 36px;
+    font-weight: bold;
+    animation: colorChange 6s infinite;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes colorChange {
+    0%   { color: blue;}
+    25%  { color: orange; }
+    50%  { color: black; }
+    75%  { color: pink; }
+    100% { color: green; }
+}
