@@ -6,8 +6,8 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: yellow;
-    color: blue;
+    background-color: rgb(226, 226, 13);
+    color: rgb(41, 41, 241);
 }
 
 header {
@@ -43,13 +43,13 @@ header {
 }
 
 .slot.occupied {
-    background-color: red;
+    background-color: rgb(238, 27, 27);
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
-    color: rgb(133, 124, 26);
+    color: rgb(208, 114, 6);
     margin-top: 20px;
 }
